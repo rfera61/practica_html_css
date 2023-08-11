@@ -1,0 +1,229 @@
+/* GOOGLE FONTS */
+  
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root{
+    --titulos:'Hammersmith One', sans-serif;
+    --texto:'Poppins', sans-serif;
+}
+
+/* VARIABLES */
+
+/* ANIMACIONES */
+
+@keyframes titulo {
+    0%{transform: translateX(-120px);}
+    50%{transform: translateY(120px);}
+    100%{transform: rotate(45deg);}
+}
+
+/* ANIMACIONES */
+
+body{
+   background-color: grey;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    max-width: 1300px;
+    padding: 50px;
+    gap: 15px;
+    border-bottom: solid 1px;
+}
+
+
+.izquierdo{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.imagen{
+    height: 350px;
+    width:350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=);
+}
+
+
+.izquierdo a{
+    display: flex;
+    color: rgb(0, 0, 42);
+    text-decoration: none;
+    border: rgb(0, 0, 42) 3px solid;
+    padding: 6px 20px;
+    width: fit-content;
+    margin-left: 5px;
+    border-radius: 15px;
+    font-family: var(--texto);
+}
+
+.izquierdo a:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 42);
+    color: white;
+    transition: all 2s;
+}
+
+.izquierdo h1{
+    font-size: 2.5rem;
+    font-family: var(--titulos);
+}
+
+.izquierdo p{
+    font-size: 1.5rem;
+    font-family: var(--texto);
+   
+}
+
+.botones{
+    display: flex;
+}
+
+.presentacion{
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+    font-family: var(--texto);
+}
+
+.tercer{
+    flex-direction: column;
+}
+
+.arriba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.arriba h2{
+    font-family: var(--titulos);
+}
+
+.abajo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    gap:15px
+}
+
+
+.beneficios p{
+    text-align: center;
+    font-family: var(--texto);
+}
+
+.beneficios h3{
+    text-align: center;
+    font-family: var(--titulos);
+}
+
+.fa-solid{
+    font-size: xx-large;
+}
+
+.fa-regular{
+    font-size: xx-large;
+}
+
+.cuarta{
+    width: 1300px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuarta{
+    display: flex;
+}
+
+.cuarta_1{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 80px;
+
+}
+
+.personas{
+    display: flex;
+    gap: 60px;
+}
+
+.columna_persona{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.columna_persona span{
+    display: flex;
+    gap:15px;
+}
+
+.columna_persona p{
+    font-family: var(--texto);
+}
+
+.contacto{
+    font-family: var(--titulos);
+    font-size: 2.5rem;
+}
+
+.redes{
+    display: flex;
+    gap:20px;
+    font-size: xx-large;
+}
+
+.redes a i:hover{
+    cursor: pointer;
+    text-shadow: rgba(0, 0, 0, 0.253) 0 0 15px;
+}
+
+.personas .columna_persona b{
+    font-family: var(--titulos);
+}
+
+.titulo{
+    animation-name: titulo;
+    animation-duration: 2s;
+}
